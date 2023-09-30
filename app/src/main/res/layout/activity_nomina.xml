@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nominaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculo de Pago de Nomina"
+            android:textAlignment="center"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/lblEmpleado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Nombre Empleado"
+            android:textSize="25dp"
+            android:textStyle="bold"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Numero De Recibo:"
+                android:textSize="20dp"
+        ></TextView>
+
+            <EditText
+                android:id="@+id/txtNumRecibo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ㅤ"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="Nombre:"
+                android:textSize="20dp"
+          ></TextView>
+
+            <EditText
+                android:enabled="false"
+                android:id="@+id/txtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ㅤ"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Horas Trabajadas:"
+            android:textSize="20dp"
+            ></TextView>
+
+        <EditText
+
+            android:id="@+id/txtHorasTrabajadas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ㅤ"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Horas Extras:"
+            android:textSize="20dp"
+            ></TextView>
+
+        <EditText
+            android:id="@+id/txtHorasExtras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ㅤ"
+            android:textSize="20dp"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Auxiliar">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Albañil">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ing. Obra">
+            </RadioButton>
+
+        </RadioGroup>
+
+            <TextView
+                android:id="@+id/lblSubtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subtotal: $"
+                android:textSize="20dp"
+                ></TextView>
+
+
+
+            <TextView
+                android:id="@+id/lblImpuesto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Impuesto: $"
+                android:textSize="20dp"
+                ></TextView>
+
+
+            <TextView
+                android:id="@+id/lblTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total: $"
+                android:textSize="20dp"
+                ></TextView>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calcular"
+            android:id="@+id/btnCalcular"></Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Limpiar"
+            android:id="@+id/btnLimpiar"></Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cerrar"
+            android:id="@+id/btnCerrar"></Button>
+
+    </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
